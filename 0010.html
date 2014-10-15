@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <style>
+            body{
+                font-family: sans-serif;
+            }
+            #box_right{
+                height: 175px;
+                width: 300px;
+                background-color: #cccccc;
+                position: absolute;
+                margin-left: 320px;
+                padding: 5px;
+            }
+
+            #box_left{
+                height: 200px;
+                width: 300px;
+                background-color: #cccccc;
+                margin-top: 5px;
+                padding: 5px;
+            }
+
+            label {
+                display: inline-block;
+                width: 120px;
+            }
+            
+            input[type=text] {
+                width:100px;
+            }
+
+            #submit {
+                width: 75px;
+            }
+/*
+            .boxes {
+                width: 10px;
+            }*/
+
+        </style>
+    </head>
+    <body>
+        <h1>Columns!</h1>
+        <div id="box_right">
+            <form>
+            <div>
+                <label for="Name">Name</label>
+                <input type="text" name="Name"></input>
+            </div>
+            <div>
+                <label for="Age">Age</label>
+                <input type="text" name="Age"></input>
+            </div>
+            <div>
+                <label for="color">Favorite Color</label>
+                <select name="color">
+                    <option value="magenta">Magenta</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                    <option value="fuchsia">Fuchsia</option>
+                </select>
+            </div>
+            <div>
+                <label for="music">Love Music</label>
+                <input class="boxes" type="radio" name="music" value="love_music">
+            </div>    
+            <div>
+                <label for="music">Hate Music</label>
+                <input class="boxes" type="radio" name="music" value="hate_music">
+            </div>
+            <div>
+                <label for="raining">Is it raining?</label>
+                <input class="boxes" type="checkbox" name="raining" 
+                     value="its_raining">
+            </div>
+
+        <div>
+            <input id="submit" value="Submit" type="submit"></input>
+        </div>
+       </form>
+        </div>
+        <div id="box_left">
+            <h2>Here is a list of things.</h2>
+            <ul>
+                <li>Bananas</li>
+                <li>Rabbit holes.</li>
+                <li>John Quincy Adams</li>
+                <li>A sea serpent</li>
+            </ul>
+        </div>
+    </body>
+</html>

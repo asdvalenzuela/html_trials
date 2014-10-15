@@ -1,0 +1,55 @@
+<html>
+<head>
+    <style> 
+        body {
+            font-family: sans-serif;
+        }
+        label {
+            display: inline-block;
+            width: 150px;
+        }
+        #submit {
+            width: 75px;
+        }
+    </style>
+    </head>
+    <body>
+        <h1>A Fancy Form</h1>
+       <form>
+            <div>
+                <label for="Name">Name</label>
+                <input type="text" name="Name"></input>
+            </div>
+            <div>
+                <label for="Age">Age</label>
+                <input type="text" name="Age"></input>
+            </div>
+            <div>
+                <label for="color">Favorite Color</label>
+                <select name="color">
+                    <option value="magenta">Magenta</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                    <option value="fuchsia">Fuchsia</option>
+                </select>
+            </div>
+            <div>
+                <label for="music">Love Music</label>
+                <input type="radio" name="music" value="love_music">
+            </div>    
+            <div>
+                <label for="music">Hate Music</label>
+                <input type="radio" name="music" value="hate_music">
+            </div>
+            <div>
+                <label for="raining">Is it raining?</label>
+                <input type="checkbox" name="raining" value="its_raining">
+            </div>
+
+        <div>
+            <input id="submit" type="submit"></input>
+        </div>
+       </form>
+    </body>
+</html>
